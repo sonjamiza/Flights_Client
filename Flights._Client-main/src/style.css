@@ -1,0 +1,105 @@
+/* Background & base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 900px; /* Rritëm pak maksimumin për një pamje më të hapur */
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 15px; /* Rrumbullakosje më e theksuar */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1); /* Hidhim një hijë më të theksuar */
+}
+
+/* Titles */
+h1, h2 {
+  text-align: center;
+  color: #2c3e50; /* Ngjyrë më e errët dhe elegante */
+  margin-bottom: 20px;
+}
+
+/* Flight list & booking */
+.flight-list,
+.booking-form {
+  margin-top: 40px;
+}
+
+/* Flight items */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #f7f9fc; /* Ngjyrë më e butë */
+  border-left: 6px solid #2196F3;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out; /* Animacion i butë */
+}
+
+li:hover {
+  transform: translateX(10px); /* Lëvizje e vogël për efekt hover */
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Hapësirë më e madhe mes elementeve */
+}
+
+input,
+select,
+button {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Rrumbullakosje më e butë */
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Focus effect for form elements */
+input:focus,
+select:focus {
+  border-color: #2196F3; /* Ndryshim i ngjyrës së kufirit kur fokusohet inputi */
+  outline: none; /* Heqim outline për një pamje më të pastër */
+}
+
+/* Button styles */
+button {
+  background-color: #2196F3;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 16px;
+  border-radius: 8px; /* Rrumbullakosje më elegante */
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0b7dda;
+  transform: translateY(-3px); /* Efekt ngritjeje për butonin */
+}
+
+button:active {
+  transform: translateY(1px); /* Efekt shtypje */
+}
+
+/* Message */
+p {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #2196F3;
+  font-size: 18px; /* Përshtatje e madhësisë së fontit */
+}

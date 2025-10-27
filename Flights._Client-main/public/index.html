@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" type="text/css" href="../src/style.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <h1>Flight Booking System</h1>
+        
+        <section class="flight-list">
+            <h2>Available Flights</h2>
+            <div id="flights"></div>
+        </section>
+
+        <section class="booking-form">
+            <h2>Book Your Flight</h2>
+            <form id="bookingForm">
+                <input type="text" id="passengerName" placeholder="Your Name" required>
+                <select id="flightSelect" required></select>
+                <button type="submit">Book Now</button>
+            </form>
+            <p id="message"></p>
+        </section>
+    </div>
+</body>
+</html>
